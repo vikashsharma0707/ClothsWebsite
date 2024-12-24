@@ -22,6 +22,10 @@ app.use("/users", userRoute);
 
 app.use("/api/payment/",paymentRoute);
 
+app.get("/",(req,res)=>{
+    res.send("code is working")
+})
+
 
 mongoose.connect(process.env.DBCON).then(()=>{
     console.log("DB Connected!!!");
