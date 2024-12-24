@@ -55,7 +55,7 @@ const CheckOut=()=>{
    )
     
     try {
-      const orderURL = "http://localhost:8000/api/payment/orders";
+      const orderURL = "https://clothswebsite.onrender.com/api/payment/orders";
       const {data} = await axios.post(orderURL,{amount: mypro.price});
       console.log(data);
       initPay(data.data);
@@ -65,7 +65,7 @@ const CheckOut=()=>{
  
  
  
-    const api = "http://localhost:8000/users/usersave";  
+    const api = "https://clothswebsite.onrender.com/users/usersave";  
     axios.post(api, {...input, proname:mypro.name, price:mypro.price}).then((res)=>{
       console.log("Data save!!!");
     })
