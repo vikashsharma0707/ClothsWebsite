@@ -21,7 +21,7 @@ const navigate= useNavigate();
     }
 
     const handleSubmit=()=>{
-        let api="http://localhost:8000/product/shopproduct";
+        let api="https://clothswebsite.onrender.com/product/shopproduct";
         axios.post(api, input).then((res)=>{
             setMydata(res.data);
             console.log(res.data);

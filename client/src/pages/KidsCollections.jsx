@@ -11,7 +11,7 @@ const [mydata, setMydata]=useState([]);
 const dispatch= useDispatch();
 const navigate= useNavigate();
   const loadData=()=>{
-    let api="http://localhost:8000/product/showmenproduct?category=Kids";
+    let api="https://clothswebsite.onrender.com/product/showmenproduct?category=Kids";
     axios.get(api).then((res)=>{
       setMydata(res.data);
       console.log(res.data);

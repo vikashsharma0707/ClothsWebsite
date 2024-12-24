@@ -14,7 +14,7 @@ const navigate= useNavigate();
 
     const handleChange=(e)=>{ 
         setMyPro(e.target.value);
-        let api=`http://localhost:8000/product/searchproduct/?product=${mypro}`;
+        let api=`https://clothswebsite.onrender.com/product/searchproduct/?product=${mypro}`;
            axios.get(api).then((res)=>{
             setMydata(res.data);
             console.log(res.data);

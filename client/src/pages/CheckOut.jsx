@@ -26,7 +26,7 @@ const CheckOut=()=>{
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyURL = "https://localhost:8000/api/payment/verify";
+          const verifyURL = "https://clothswebsite.onrender.com/api/payment/verify";
           const {data} = await axios.post(verifyURL,response);
         } catch(error) {
           console.log(error);
